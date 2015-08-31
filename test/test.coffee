@@ -7,6 +7,8 @@ it 'should check if things are like arrays', ->
   (isArrayish 1).should.equal no
   (isArrayish 'hello').should.equal no
   (isArrayish {}).should.equal no
+  (isArrayish null).should.equal no
+  (isArrayish undefined).should.equal no
 
   (isArrayish length: 123, splice: (->)).should.equal yes
   (isArrayish []).should.equal yes
