@@ -10,7 +10,6 @@ node_js:
   - "iojs"
 os:
   - linux
-  - osx
 
 notifications:
   slack:
