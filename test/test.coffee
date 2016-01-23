@@ -11,6 +11,7 @@ it 'should check if things are like arrays', ->
   (isArrayish undefined).should.equal no
 
   (isArrayish length: 123, splice: (->)).should.equal yes
+  (isArrayish length: 3, 0: 1, 1: 15, 2: 17).should.equal yes
   (isArrayish []).should.equal yes
   (isArrayish __proto__: []).should.equal yes
   (isArrayish __proto__: Array.prototype).should.equal yes
