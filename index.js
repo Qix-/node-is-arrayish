@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function isArrayish(obj) {
-	if (!obj) {
+	if (!obj || typeof obj === 'string') {
 		return false;
 	}
 
