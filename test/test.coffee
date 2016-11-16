@@ -18,3 +18,5 @@ it 'should check if things are like arrays', ->
   if Object.setPrototypeOf
     (isArrayish Object.setPrototypeOf {}, []).should.equal yes
     (isArrayish Object.setPrototypeOf {}, Array.prototype).should.equal yes
+
+  (isArrayish [1, 3, 4, 5]).should.equal yes
