@@ -6,3 +6,4 @@
 .editorconfig
 .istanbul.yml
 .travis.yml
+*.log
